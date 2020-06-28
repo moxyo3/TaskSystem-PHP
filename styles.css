@@ -1,0 +1,26 @@
+@charset="UTF-8";
+
+div#header {
+    background-color: #99FFCC;
+    height: 40px;
+    width: 100%;
+}
+
+#login_form {
+    background-color: green;
+    height: 260px;
+    width: auto;
+    border: 1px solid black;
+    margin: auto;
+    padding: 50px;
+}
+
+div#footer {
+    background-color: yellow;
+    height: 40px;
+    width: 100%;
+}
+
+body {
+    background-color: red;
+}
