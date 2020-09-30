@@ -19,12 +19,13 @@ try {
     $stmt->execute();
     $result = $stmt->fetch();
 
-    ////文字数チェック
-    //if (mb_strlen($topicName, 'UTF-8')>32) {
-    //    //文字数エラー
-    //    $err_msg = '32文字以内で入力してください';
-    //    return false;
-    //}
+    //文字数チェック
+    if (mb_strlen($topicName, 'UTF-8')>32) {
+        //文字数エラー
+        $err_msg = '32文字以内で入力してください';
+        echo $err_msg;
+        return false;
+    }
 
     //空文字でないか
     if ($topicName == "") {
