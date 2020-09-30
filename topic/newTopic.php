@@ -37,6 +37,7 @@ try {
     if ($result > 0) {
         $err_msg = "既に登録済のトピック名です";
         echo $err_msg;
+        return false;
     } else {
         $sql ="INSERT INTO topics (topic_name, createUser) VALUES (:topicName, :createUser)";
         $stmt = $pdo->prepare($sql);
